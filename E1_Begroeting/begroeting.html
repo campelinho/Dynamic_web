@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Begroeting</title>
+</head>
+<body>
+    <div id="div">
+        <p id="greeting">Hallo!</p>
+    </div>
+    
+
+    <p><!-- get elemenyby id zoekt in html de id greeting-->
+            <button onclick="let g = document.getElementById('greeting'); g.innerText = g.innerText === 'Hallo!' ? 'Tot ziens!' : 'Hallo!';">
+                Begroeting veranderen
+            </button>
+        
+        <!-- Dit is een ternaire operator, een verkorte manier om een if-else-statement te schrijven:
+                    Voorwaarde: g.innerText === 'Hallo!'Controleert of de huidige tekst van het element "Hallo!" is.
+
+                    Als de voorwaarde waar is (true):Zet g.innerText op "Tot ziens!".
+
+                    Als de voorwaarde onwaar is (false):Zet g.innerText op "Hallo!".-->
+                    
+    </p>
+    
+
+</body>
+</html>
